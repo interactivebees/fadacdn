@@ -17,7 +17,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+        document.getElementById("countdown-timer").innerHTML = "<ul><li>00<span>Days</span></li><li>00<span>Hours</span></li><li>00<span>Minutes</span></li><li>00<span>Seconds</span></li></ul>";
     }
 }, 1000);
 $(document).ready(function(){
